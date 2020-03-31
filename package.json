@@ -18,9 +18,10 @@
         "express": "^4.17.1",
         "file-system": "^2.2.2",
         "jsonwebtoken": "^8.5.1",
-        "mongoose": "^5.9.3",
+        "minimist": "^1.2.5",
+        "mongoose": "^5.9.7",
         "mongoose-unique-validator": "^2.0.3",
-        "morgan": "^1.9.1",
-        "underscore": "^1.9.2"
+        "morgan": "^1.10.0",
+        "underscore": "^1.10.2"
     }
 }
