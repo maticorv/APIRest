@@ -10,7 +10,7 @@ const bcrypt = require('bcrypt');
 const _ = require('underscore');
 // import mongoose from 'mongoose';
 
-const port = 3000;
+const port = 8000;
 
 
 
@@ -25,6 +25,9 @@ app.use(morgan('dev'));
 // Configuracion global de rutas 
 app.use(require('./routes/index'));
 
+
+// Importar directorio publico
+app.use(express.static(__dirname + '/public'));
 
 mongoose.connect('mongodb+srv://matias:nAkkIpkaoRbBAN3y@cafe-1vggv.gcp.mongodb.net/test?retryWrites=true&w=majority', {
     useNewUrlParser: true,

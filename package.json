@@ -17,6 +17,7 @@
         "colors": "^1.4.0",
         "express": "^4.17.1",
         "file-system": "^2.2.2",
+        "google-auth-library": "^6.0.0",
         "jsonwebtoken": "^8.5.1",
         "minimist": "^1.2.5",
         "mongoose": "^5.9.7",
