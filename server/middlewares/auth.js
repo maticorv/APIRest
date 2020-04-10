@@ -51,10 +51,26 @@ const VerificacionUSER_ROLE = (req, res, next) => {
 
 };
 
+// =======================
+// Verificacion de ROL
+// =======================
+const VerificacionADMIN_ROLE = (req, res, next) => {
+    if (req.usuario.role === 'ADMIN_ROLE') {
+        next();
+    } else {
+        return res.status(401).json({
+            err: 'No estas autorizado'
+        });
+
+    }
+
+};
+
 
 
 
 module.exports = {
     VerificacionToken,
     VerificacionUSER_ROLE,
+    VerificacionADMIN_ROLE,
 };
