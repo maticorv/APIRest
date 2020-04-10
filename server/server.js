@@ -10,7 +10,7 @@ const bcrypt = require('bcrypt');
 const _ = require('underscore');
 // import mongoose from 'mongoose';
 
-const port = 3000;
+const port = 8000;
 
 
 
@@ -23,7 +23,7 @@ app.use(bodyParser.json());
 app.use(morgan('dev'));
 
 // Configuracion global de rutas 
-app.use(require('./routes/index'));
+app.use('/api', require('./routes/index'));
 
 
 mongoose.connect('mongodb+srv://matias:nAkkIpkaoRbBAN3y@cafe-1vggv.gcp.mongodb.net/test?retryWrites=true&w=majority', {
@@ -35,7 +35,7 @@ mongoose.connect('mongodb+srv://matias:nAkkIpkaoRbBAN3y@cafe-1vggv.gcp.mongodb.n
 });
 
 
-app.get('/', function(req, res) {
+app.get('/api', function(req, res) {
     console.log('req :', req.headers.authorization);
     res.send('Bienvenido  a API Rest!');
 });
