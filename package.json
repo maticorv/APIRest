@@ -20,7 +20,7 @@
         "file-system": "^2.2.2",
         "jsonwebtoken": "^8.5.1",
         "minimist": "^1.2.5",
-        "mongoose": "^5.9.7",
+        "mongoose": "^5.9.12",
         "mongoose-unique-validator": "^2.0.3",
         "morgan": "^1.10.0",
         "nodemon": "^2.0.2",
